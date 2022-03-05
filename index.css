@@ -1,0 +1,96 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd,
+picture {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  min-height: 100vh;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+botton,
+textarea,
+select {
+  font: inherit;
+}
+
+@media (prefers-reduce-motion: reduce) {
+  *,
+*::after,
+*::before {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+html {
+  font-size: 16px;
+}
+
+.grid {
+  display: grid;
+}
+
+.flex {
+  display: flex;
+}
+
+.body_container {
+  min-height: 100vh;
+  background-color: #0d192b;
+}
+
+.main_wrapper {
+  flex-direction: row;
+  margin: 2rem auto;
+  background-color: #14253d;
+  min-width: 20rem;
+  min-height: 30rem;
+  border-radius: 0.75rem;
+  justify-content: center;
+}
+
+.product_image {
+  background: url(./images/image-equilibrium.jpg) no-repeat center;
+  background-size: cover;
+  margin-top: 0.75rem;
+  width: 18.5rem;
+  height: 20rem;
+  background-color: none;
+  border-radius: 0.75rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: #3e52a3;
+}
+
+/*# sourceMappingURL=index.css.map */
