@@ -192,6 +192,13 @@ html {
 .creator p {
   color: white;
 }
+.creator a {
+  text-decoration: none;
+}
+.creator a:hover {
+  color: #00fff7;
+  cursor: pointer;
+}
 
 .attribution {
   font-size: 11px;

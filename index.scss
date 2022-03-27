@@ -213,6 +213,14 @@ html {
     p {
         color: white;
     }
+
+    a {
+        text-decoration: none;
+        &:hover {
+            color: $--cyan;
+            cursor: pointer;
+        }
+    }
 }
 
 .attribution {
