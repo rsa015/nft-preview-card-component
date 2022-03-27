@@ -87,16 +87,13 @@ html {
   position: relative;
   color: #00fff7;
 }
-.product_image:hover {
-  display: block;
-  cursor: pointer;
-}
 
 .overlay_view {
   color: #00fff7;
   position: relative;
   width: 100%;
   height: 100%;
+  opacity: 0;
   border-radius: 0.75rem;
   background-color: rgba(0, 255, 247, 0.4);
 }
@@ -107,8 +104,13 @@ html {
   top: 8.5rem;
 }
 
+.product_image:hover .product_image {
+  opacity: 0.3;
+}
+
 .product_image:hover .overlay_view {
-  display: block;
+  opacity: 1;
+  cursor: pointer;
 }
 
 .product_description {
