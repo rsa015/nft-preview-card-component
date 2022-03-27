@@ -95,24 +95,47 @@ html {
 }
 
 .product_image {
-    background: url(./images/image-equilibrium.jpg) no-repeat center;
-    background-size: cover;
+    background: url(./images/image-equilibrium.jpg) no-repeat center center/cover;
     margin-top: .75rem;
     width: 18.5rem;
     height: 20rem;
-    background-color: none;
     border-radius: .75rem;
-    // button {
-    //     background: url(./images/image-equilibrium.jpg) no-repeat center;
-    //     background-size: cover;
-    //     border: none;
-    //     border-radius: .75rem;
-    //     &:hover {
-    //         cursor: pointer;
-    //         background: url(./images/icon-view.svg) no-repeat center;
-    //         background-size: cover;
-    //     }
-    // }
+    position: relative;
+    color: hsl(178, 100%, 50%);
+    &:hover {
+        display: block;
+        cursor: pointer;
+        // justify-content: center;
+        // align-items: center;
+    }
+    
+}
+
+.overlay_view {
+    color: $--cyan;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.75rem;
+    background-color: hsl(178, 100%, 50%, 0.4);
+}
+
+.view_icon {
+    position: absolute;
+    left: 7.75rem;
+    top: 8.5rem;
+    // background-color: black;
+}
+
+// .view_icon img{
+//     width: 3rem;
+//     position: absolute;
+//     top: 50%;
+//     left: 50%;
+// }
+
+.product_image:hover .overlay_view {
+    display: block;
 }
 
 .product_description {
@@ -194,6 +217,9 @@ html {
 
     span {
         color: $--soft-blue;
+    }
+    p {
+        color: white;
     }
 }
 
